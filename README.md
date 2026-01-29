@@ -26,7 +26,7 @@ webapp-dev/
 
 ## 含まれているもの
 - ディレクトリ構成（backend / db）
-- HTML テンプレート（最小構成）
+- HTML テンプレート
 - 空の設定ファイル（Dockerfile / requirements / compose / init.sql）
 
 ## 含まれていないもの（演習中に作成）

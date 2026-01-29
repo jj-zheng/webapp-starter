@@ -5,11 +5,19 @@
   <title>メモ編集</title>
 </head>
 <body>
-  <h1>編集</h1>
+  <h1>メモ編集</h1>
 
-  <!-- TODO(演習): 編集フォームを作る（POST /notes/<id>/edit） -->
-  <!-- 変数：note_id, content が渡ってくる想定 -->
+  <form method="post" action="/notes/{{ note_id }}/edit">
+    <p>
+      <textarea name="content" rows="5" cols="40" required>{{ content }}</textarea>
+    </p>
+    <p>
+      <button type="submit">更新</button>
+    </p>
+  </form>
 
-  <p><a href="/">一覧に戻る</a></p>
+  <p>
+    <a href="/">一覧に戻る</a>
+  </p>
 </body>
 </html>

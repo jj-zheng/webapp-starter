@@ -2,15 +2,37 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>演習３ Webアプリ開発</title>
+  <title>情報科学演習IV Webアプリ</title>
 </head>
 <body>
   <h1>メモ一覧</h1>
 
-  <!-- TODO(演習): Create 用フォームを作る（POST /notes） -->
+  <h2>新規メモ追加</h2>
+  <form method="post" action="/notes">
+    <p>
+      <input type="text" name="content" size="40" placeholder="メモを入力" required>
+      <button type="submit">追加</button>
+    </p>
+  </form>
 
-  <!-- TODO(演習): notes をループして一覧表示する -->
-  <!-- 例： {% for id, content, created_at in notes %} ... {% endfor %} -->
+  <hr>
+
+  <h2>登録済みメモ</h2>
+
+  {% if notes and notes|length > 0 %}
+    <ul>
+      {% for id, content, created_at in notes %}
+        <li>
+          <strong>#{{ id }}</strong>
+          {{ content }}
+          <small>（{{ created_at }}）</small>
+          <a href="/notes/{{ id }}/edit">編集</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>まだメモはありません。</p>
+  {% endif %}
 
 </body>
 </html>
