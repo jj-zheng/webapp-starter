@@ -1,0 +1,2 @@
+-- TODO(演習): notes テーブルを作成する
+-- 必須カラム: id, content, created_at

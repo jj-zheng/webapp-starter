@@ -1,0 +1,4 @@
+# TODO(演習): Flask と DB ドライバを追加する
+# 例:
+# flask
+# psycopg2-binary

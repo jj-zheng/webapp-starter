@@ -1,0 +1,4 @@
+# TODO(演習): app(Flask) と db(PostgreSQL) を docker compose で定義する
+# 必須:
+# - app サービス: backend を build, ポート 5000:5000, DB_* 環境変数
+# - db サービス: postgres:15, 初期化SQLをマウント, データ永続化 volume
