@@ -2,4 +2,4 @@
 # ヒント:
 # - python:3.11-slim
 # - requirements.txt を pip install
-# - app.py を起動
+# - app.py を起動 

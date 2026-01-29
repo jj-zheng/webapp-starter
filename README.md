@@ -27,7 +27,7 @@ webapp-dev/
 ## 含まれているもの
 - ディレクトリ構成（backend / db）
 - HTML テンプレート
-- 空の設定ファイル（Dockerfile / requirements / compose / init.sql）
+- 空の設定ファイル（Dockerfile / requirements.txt / docker-compose.yml / init.sql）
 
 ## 含まれていないもの（演習中に作成）
 - Flask の実装（Create / Read / Update）
