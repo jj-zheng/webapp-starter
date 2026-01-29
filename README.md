@@ -21,7 +21,7 @@ webapp-dev/
 │ 		├── index.html
 │ 		└── edit.html
 └── db/
-		└── init.sql
+	└── init.sql
 ```
 
 ## 含まれているもの
